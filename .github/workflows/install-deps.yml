@@ -6,10 +6,12 @@ on:
     branches: [ main ]
     paths-ignore:
       - 'sample_data.csv'
+      - 'README.md'
   pull_request:
     branches: [ main ]
     paths-ignore:
       - 'sample_data.csv'
+      - 'README.md'
 
 jobs:
   install:

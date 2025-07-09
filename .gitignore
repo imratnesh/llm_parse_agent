@@ -128,3 +128,6 @@ cython_debug/
 
 # VS Code
 .vscode/
+
+# Misc
+README.md
