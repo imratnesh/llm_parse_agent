@@ -4,8 +4,12 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'sample_data.csv'
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - 'sample_data.csv'
 
 jobs:
   lint-doc-env:

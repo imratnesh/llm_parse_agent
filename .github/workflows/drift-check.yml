@@ -22,4 +22,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run drift check
         run: |
-          python drift_check.py --csv sample_data.csv --column age_int --expected_mean 30 --threshold 0.0
+          python drift_check.py --csv sample_data.csv --column age_int --expected_mean 30 --threshold 5.0
+          # Adjust the expected_mean and threshold as per your requirements

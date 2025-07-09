@@ -6,8 +6,12 @@ name: Python CI
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'sample_data.csv'
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - 'sample_data.csv'
 
 jobs:
   build:
