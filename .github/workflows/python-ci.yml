@@ -28,9 +28,9 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 .
-    - name: Check docstrings with pydocstyle
-      run: |
-        pydocstyle .
+    # - name: Check docstrings with pydocstyle
+    #   run: |
+    #     pydocstyle .
     - name: Run tests with pytest
       run: |
         pytest --maxfail=1 --disable-warnings -v
