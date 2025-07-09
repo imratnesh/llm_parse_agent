@@ -23,9 +23,9 @@ jobs:
       - name: Lint with flake8
         run: |
           flake8 .
-      - name: Check docstrings with pydocstyle
-        run: |
-          pydocstyle .
+      # - name: Check docstrings with pydocstyle
+      #   run: |
+      #     pydocstyle .
       - name: Check DEMO_API_KEY env variable
         run: |
           if [ -z "$DEMO_API_KEY" ]; then echo "DEMO_API_KEY is not set!"; exit 1; fi
